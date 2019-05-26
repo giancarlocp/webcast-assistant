@@ -1,0 +1,11 @@
+# Logs and Locks
+*.log
+*.lock
+npm*.log*
+yarn*
+
+# Dependency directories
+node_modules/
+
+# production
+build/
