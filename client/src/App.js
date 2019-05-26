@@ -55,21 +55,19 @@ function App() {
       setInterval(update_questions, 9900)
     },
     view: () =>
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Flask Webcast</h1>
-          <h3>Q&A</h3>
-        </header>
-        <ul className="App-body">
-          <a href="#" onclick={reload_questions}>
-            <i class="fa fa-refresh"></i>
-          </a>
-          {state.questions.map(q => 
-            <Question key={'question'+q.id} question={q} 
-                upvote_question={upvote_question} />
-          )}
-        </ul>
-      </div>
+      m("div.App", [
+        m("header.App-header", [
+            m("h1.App-title", "Flask Webcast"),
+            m("h3", "Q&A") 
+        ]),
+        m("ul.App-body", [
+            m("a[href='#']", {onclick:reload_questions},
+              m("i.fa.fa-refresh") ),
+            state.questions.map(q =>
+              m(Question, {key:'question'+q.id,q,upvote_question} )
+            )
+        ])
+    ])
   }
 }
 export default App()
