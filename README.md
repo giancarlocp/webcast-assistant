@@ -1,7 +1,7 @@
 # Webcast-Assistant
 A Mithril test working with a mocking Flask API.
 
-This Webcast is a translation from @miguelgrinberg's **React** version to a
+This Webcast-Assistant is a translation from [@miguelgrinberg's **React**](https://github.com/miguelgrinberg/webcast-assistant) version to a
 **Mithril** front-end. This is a test, so setting are done to development,
 it is not intended to be a production App.
 
@@ -16,7 +16,7 @@ and the Service-Worker (front-end) part. We'll have a mocking API server.
 The boilerplate is based in [sample-mithril-app](https://github.com/highmountaintea/sample-mithril-app) which a part of [create-mithril-app](https://github.com/highmountaintea/create-mithril-app).
 [![npm package](https://nodei.co/npm/sample-mithril-app.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/sample-mithril-app/)
 
-An updated verion with JSX support is [here](https://github.com/giancarlocp/sample-mithril-app)
+An updated version with JSX support is [here](https://github.com/giancarlocp/sample-mithril-app)
 
 ### Setup. Mock API
 ```sh
