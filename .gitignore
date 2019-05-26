@@ -1,0 +1,15 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Environments
+.env
+.venv
+venv/
+venv*
+
+*.swp
+*.sqlite
